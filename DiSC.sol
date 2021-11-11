@@ -1,7 +1,7 @@
 pragma solidity 0.5.14;
 
-import "./EllipticCurve.sol";
-
+//import "./EllipticCurve.sol";
+import "https://github.com/witnet/elliptic-curve-solidity/blob/master/contracts/EllipticCurve.sol";
 contract DiSC {
 
   uint256 public constant GX = 0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798;
