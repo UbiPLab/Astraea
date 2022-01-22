@@ -65,6 +65,15 @@ contract DoSC{
         bytes32 hcl;
     }
     Receive_his[] receive_his_lis;
+
+    struct Refund_his{
+        uint256 pkcoix;
+        uint256 pkcoiy;
+        uint256 dt;
+        bytes32 hclj;
+    }
+    Refund_his[] refund_his_lis;
+
     struct don{
         State donstate;
         uint256 deposit;
@@ -159,7 +168,7 @@ contract DoSC{
             "Incorrect"
         );
         Receive_his memory r=Receive_his(hfbi,dt,hcl);
-        Refund(hcl);
+        //Refund(hcl);
         receive_his_lis.push(r);
     }
 
@@ -223,8 +232,14 @@ contract DoSC{
 
     }
 
-    function Refund(bytes32 hcl) private{
+    function Refund(uint256 pkcoix,uint256 pkcoiy,uint256 dt, bytes32 hcl,bytes32 msgh,uint8 v,bytes32 r,bytes32 s) public{
+        require(
+            ecrecover(msgh, v, r, s)==msg.sender,
+            "Incorrect"
+        );
         don memory d=Don[hcl];
+        Refund_his memory r=Refund_his(pkcoix,pkcoiy,dt,hcl);
+        refund_his_lis.push(r);
         if(DonIsEmpty[hcl]!=0){// not empty
             if(d.donstate==State.delivered){
 
