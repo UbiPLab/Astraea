@@ -137,7 +137,7 @@ contract DoSC{
         );
         uint256 dt=now;
         Dis_his memory d=Dis_his(pkcoix,pkcoiy,hclj,cmqx,cmqy,tokqx,tokqy,dt);
-        Transfer("Store",hclj,0,msg.sender);
+        Transfer("Distribute",hclj,0,msg.sender);
         dis_his_lis.push(d);
     }
 
