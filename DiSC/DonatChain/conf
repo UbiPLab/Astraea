@@ -1,0 +1,185 @@
+
+1.受赠人在中间商的网站上发布捐赠请求，其中最重要的信息如下：
+struct Req{
+    uint256 ReqRi;//编号
+    uint256 ReqCi;//中间商编号
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+	uint256 ReqDn;// 所需数量
+}
+
+
+
+
+2.捐赠者看到该请求后，生成捐赠响应
+原始消息共：32*16 bytes，加密后：(32+1)*130 bytes
+发给disc
+struct Resp {
+    uint256 ReqRi;
+	uint256 ReqCi;
+	uint256 ReqPkcoiX;
+    uint256 ReqPkcoiY;
+	uint256 ReqDn;
+	uint256 tp1;//快递员编号    
+	uint256 lc;//逻辑公司编号    
+	uint256 idj1;//id编号
+	uint256 dnj;//捐赠数量  
+	bytes32 clj;//物资清单
+    //以下自动生成
+    //用于PoD
+	uint256 comx;//com=(g^dn)(h^r)
+    uint256 comy;//
+	uint256 tokx;//tok=pk^r
+    uint256 toky;// 
+	uint256 _rj;//随机数  
+	uint256 dt;//时间戳 
+}
+
+3.捐赠者向dosc发起捐赠交易，共32*8+1字节，头部插入一字节用以标识该消息类型
+    2和3可以同时进行，因为很多数据都是相同的，自动生成
+struct Don{
+    byte flag;//50
+    uint256 comx;//com=(g^dn)(h^r)
+    uint256 comy;//
+	uint256 tokx;//tok=pk^r
+    uint256 toky;// 
+    uint256 hash(Resp);//sha256
+    uint256 dt;//时间戳
+    //签名，所有签名可以先不考虑验资，但要保留位置
+    uint256 r;
+    uint256 s;
+}
+
+4.快递员发物资时，向dosc发起发货交易
+struct Del{
+    byte flag;//51
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 hash(clj);//sha256
+    //以下自动生成
+    uint256 dp;//押金，不好设置，干脆都用一个固定值
+    uint256 dt;//时间戳
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+5.中间商收到物资，向dosc发送存货交易
+struct Store{
+    byte flag;//52
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 hash(clj);//sha256
+    //以下自动生成
+    uint256 dt;//时间戳
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+
+6.中间商执行分配交易，发给dosc
+struct Dis{
+    byte flag;//100
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 hash(clj);//sha256
+    uint256 cmx;
+    uint256 cmy;
+    uint256 tokx;
+    uint256 toky;
+    uint256 dt;
+    //签名
+    uint256 r;
+    uint256 s;
+}
+生成审计信息，展示到网站
+struct Aud{
+    byte flag;//101
+    uint256 AggX;
+    uint256 AggY;
+    uint256 AComX;
+    uint256 AComY;
+    uint256 yX;
+    uint256 yY;
+    uint256 deltaX;
+    uint256 deltaY;
+    uint256 aa;
+    uint256 dt;
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+
+
+
+7.中间商发送ship交易到dosc
+struct Ship{
+    byte flag;//53
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 hash(clj);//sha256
+    uint256 dt;//时间戳
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+8.快递员发物资时，向dosc发起发货交易
+struct Del{
+    byte flag;//54
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 hash(clj);//sha256
+    //以下自动生成
+    uint256 dp;//押金
+    uint256 dt;//时间戳
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+
+9.受赠人收到物资，生成反馈
+struct fb{
+    uint256 tp2;
+    uint256 lc;
+    uint256 dn;
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 clj;
+    //以下自动生成
+    uint256 dt;//时间戳
+}
+用中间商的公钥加密，发给disc
+
+向dosc发起收货交易，这一消息可以完全由上一个消息得到
+struct Rec{
+    byte flag;//55
+    uint256 hash(fb);
+    uint256 dt;
+    //签名
+    uint256 r;
+    uint256 s;
+}
+
+
+10.disc向dosc执行退还押金交易
+struct Refund{
+    byte flag;//102
+    uint256 ReqPkcoiX;// 社区公钥
+    uint256 ReqPkcoiY;
+    uint256 clj;
+    uint256 dt;//时间戳
+}
+
+
+
+
+
