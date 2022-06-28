@@ -1,0 +1,1086 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "z2",
+				"type": "uint256"
+			}
+		],
+		"name": "_jAdd",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "GX",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "AudditionPartTwo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256[9]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "gx",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "a",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_a",
+				"type": "uint256"
+			}
+		],
+		"name": "modInverse",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "z2",
+				"type": "uint256"
+			}
+		],
+		"name": "_jSub",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "priKey",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "gy",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "n",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "bigr2",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "b",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "HY",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "pubKeyX",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "BB",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "hx",
+				"type": "uint256"
+			},
+			{
+				"name": "hy",
+				"type": "uint256"
+			},
+			{
+				"name": "r1",
+				"type": "uint256"
+			},
+			{
+				"name": "r2",
+				"type": "uint256"
+			},
+			{
+				"name": "prik",
+				"type": "uint256"
+			},
+			{
+				"name": "pubkX",
+				"type": "uint256"
+			},
+			{
+				"name": "pubkY",
+				"type": "uint256"
+			}
+		],
+		"name": "getNewGenerator",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "z2",
+				"type": "uint256"
+			}
+		],
+		"name": "_jMul",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "z2",
+				"type": "uint256"
+			}
+		],
+		"name": "_jDiv",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "AComX",
+				"type": "uint256"
+			},
+			{
+				"name": "AComY",
+				"type": "uint256"
+			},
+			{
+				"name": "bl",
+				"type": "bool"
+			}
+		],
+		"name": "genProof",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "GY",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			}
+		],
+		"name": "testAdd",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "scalar",
+				"type": "uint256"
+			}
+		],
+		"name": "ecmul",
+		"outputs": [
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "x",
+				"type": "uint256"
+			},
+			{
+				"name": "y",
+				"type": "uint256"
+			},
+			{
+				"name": "k",
+				"type": "uint256"
+			}
+		],
+		"name": "kPoint",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "privKey",
+				"type": "uint256"
+			}
+		],
+		"name": "publicKey",
+		"outputs": [
+			{
+				"name": "qx",
+				"type": "uint256"
+			},
+			{
+				"name": "qy",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "val",
+				"type": "uint256"
+			}
+		],
+		"name": "_inverse",
+		"outputs": [
+			{
+				"name": "invVal",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "bigr1",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "d",
+				"type": "uint256"
+			},
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			}
+		],
+		"name": "_ecMul",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "y3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "AA",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x",
+				"type": "bytes32"
+			}
+		],
+		"name": "asciiToInteger",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "s",
+				"type": "uint256"
+			},
+			{
+				"name": "B",
+				"type": "uint256[2]"
+			},
+			{
+				"name": "c",
+				"type": "uint256"
+			}
+		],
+		"name": "sbmul_add_mul",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "Clear",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_a",
+				"type": "uint256"
+			},
+			{
+				"name": "_b",
+				"type": "uint256"
+			}
+		],
+		"name": "gcb",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "pubKeyY",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "DistributePartOne",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			}
+		],
+		"name": "addPoint",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			}
+		],
+		"name": "ecadd",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "y3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			}
+		],
+		"name": "testMul",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "HX",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "AudditionPartOne",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256[9]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			},
+			{
+				"name": "x2",
+				"type": "uint256"
+			},
+			{
+				"name": "y2",
+				"type": "uint256"
+			},
+			{
+				"name": "z2",
+				"type": "uint256"
+			}
+		],
+		"name": "_ecAdd",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "y3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "privKey",
+				"type": "uint256"
+			},
+			{
+				"name": "pubX",
+				"type": "uint256"
+			},
+			{
+				"name": "pubY",
+				"type": "uint256"
+			}
+		],
+		"name": "deriveKey",
+		"outputs": [
+			{
+				"name": "qx",
+				"type": "uint256"
+			},
+			{
+				"name": "qy",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "tmp",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes1"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "arr3",
+				"type": "uint256"
+			},
+			{
+				"name": "arr4",
+				"type": "uint256"
+			},
+			{
+				"name": "arr5",
+				"type": "uint256"
+			},
+			{
+				"name": "arr6",
+				"type": "uint256"
+			},
+			{
+				"name": "arr7",
+				"type": "uint256"
+			},
+			{
+				"name": "arr8",
+				"type": "uint256"
+			},
+			{
+				"name": "arr9",
+				"type": "uint256"
+			},
+			{
+				"name": "arr10",
+				"type": "uint256"
+			},
+			{
+				"name": "arr11",
+				"type": "uint256"
+			},
+			{
+				"name": "arr12",
+				"type": "uint256"
+			},
+			{
+				"name": "arr13",
+				"type": "uint256"
+			}
+		],
+		"name": "Response",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "num",
+				"type": "uint256"
+			}
+		],
+		"name": "AddOne",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "PP",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "x1",
+				"type": "uint256"
+			},
+			{
+				"name": "y1",
+				"type": "uint256"
+			},
+			{
+				"name": "z1",
+				"type": "uint256"
+			}
+		],
+		"name": "_ecDouble",
+		"outputs": [
+			{
+				"name": "x3",
+				"type": "uint256"
+			},
+			{
+				"name": "y3",
+				"type": "uint256"
+			},
+			{
+				"name": "z3",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]
